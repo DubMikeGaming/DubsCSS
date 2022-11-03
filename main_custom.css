@@ -1,0 +1,75 @@
+@import url(https://raw.githack.com/QuackyTwitch/verb-css/main/verb.css);
+
+/*Edit the color of the CSS here by replacing #ab20fb with a different hex color code*/
+
+:root {
+    --accent: #FF3131;
+}
+
+/*Edit the font by editing the url link that links to another woff2 font file*/
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2);
+}
+
+/*Edit the logo at the top of the main page by replacing the url below*/
+
+#mainLogo {
+    content: url(https://Logo.will-morgan.repl.co/logo.png);
+}
+
+/*Edit the KPD button by replacing the url below*/
+/*Adjust height and width is your button is cropped out*/
+
+#policeButton {
+    margin: 0;
+    padding: 0;
+    height: 70px !important;
+    width: 88px !important;
+    color: #fff;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 370px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    background-image: url(https://Logo.will-morgan.repl.co/css_sprites.png);
+    background-size: cover;
+}
+
+#policeButton img {
+    margin: 0 !important;
+    height: 30px !important;
+    opacity: 0;
+}
+        /* TIMER ALWAYS SHOWS */
+#spectateUI {
+    display: block !important;
+}
+#specNames, #specGameInfo, #spec0, #spectateInfo, #spec1, #specStats, #specSUS, #specContr, #specKPDContr {
+    display: none !important;
+}
+#uiBase.onMenu #specTimer {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 35px;
+    position: fixed;
+    transform: translateX(-50%);
+    top: 700px;
+    margin-top: 0;
+    text-shadow: var(--outline)
+}
+#specTimer {
+    top: 0;
+    margin-top: -75px;
+}
+/* Ranked message info */
+#rankedSoonTm {
+display: none !important;
+}
+/* KR Popup go bye bye */
+
+#claimPop, #popupBack {
+    display: none !important;
+}
